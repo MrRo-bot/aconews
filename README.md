@@ -11,13 +11,13 @@
 
 ## Screenshots
 
-[![Desktop view](./public/screenshot1.png)]
+![Desktop view](./public/screenshot1.png)
 
-[![Tablet view](./public/screenshot2.png)]
+![Tablet view](./public/screenshot2.png)
 
-[![Tablet view](./public/screenshot3.png)]
+![Tablet view](./public/screenshot3.png)
 
-[![Mobile view](./public/screenshot4.png)]
+![Mobile view](./public/screenshot4.png)
 
 ## Table of contents
 
