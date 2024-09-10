@@ -4,7 +4,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Article from "./pages/Article";
 import Search from "./pages/Search";
-import ScrollToTop from "./utils/scrollToTop";
+import ScrollToTop from "./utils/ScrollToTop";
 function App() {
   return (
     <>
