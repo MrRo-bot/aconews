@@ -1,0 +1,32 @@
+overall website outfit font
+comfortaa font for news heading
+manrope font for news content
+
+USE GRADIENT AND SHADOWS IN WEBSITE REMEMBER
+
+background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 1) 100%);
+
+
+  vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,#9b51e0 100%);
+  light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,#7adcb4 0%,#00d082 100%);
+  luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+  luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,#cf2e2e 100%);
+  very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,#eee 0%,#a9b8c3 100%);
+  cool-to-warm-spectrum: linear-gradient(135deg,#4aeadc 0%,#9778d1 20%,#cf2aba 40%,#ee2c82 60%,#fb6962 80%,#fef84c 100%);
+  blush-light-purple: linear-gradient(135deg,#ffceec 0%,#9896f0 100%);
+  blush-bordeaux: linear-gradient(135deg,#fecda5 0%,#fe2d2d 50%,#6b003e 100%);
+  luminous-dusk: linear-gradient(135deg,#ffcb70 0%,#c751c0 50%,#4158d0 100%);
+  pale-ocean: linear-gradient(135deg,#fff5cb 0%,#b6e3d4 50%,#33a7b5 100%);
+  electric-grass: linear-gradient(135deg,#caf880 0%,#71ce7e 100%);
+  midnight: linear-gradient(135deg,#020381 0%,#2874fc 100%);
+  small: 13px;
+  medium: 20px;
+  large: 36px;
+  x-large: 42px;
+  20: .44rem;
+  30: .67rem;
+  40: 1rem;
+  50: 1.5rem;
+  60: 2.25rem;
+  70: 3.38rem;
+  80: 5.06rem;
