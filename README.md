@@ -1,7 +1,5 @@
 # Aconews
 
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/f7b1359f-3e11-4f29-88cd-7f8204e93b29/deploy-status)](https://app.netlify.com/sites/wetterforecast/deploys) -->
-
 ![React](https://img.shields.io/badge/React-teal)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
@@ -13,20 +11,24 @@
 
 ## Screenshots
 
-[![Desktop view](https://img.youtube.com/vi/-D5aYMGIiKU/0.jpg)]
+[![Desktop view](./public/screenshot1.png)]
 
-[![Mobile view](https://img.youtube.com/vi/kpaygBjb8Ac/0.jpg)]
+[![Tablet view](./public/screenshot2.png)]
+
+[![Tablet view](./public/screenshot3.png)]
+
+[![Mobile view](./public/screenshot4.png)]
 
 ## Table of contents
 
 - [Overview](#overview)
   - [About](#about)
   - [Features](#features)
+  - [Problems](#problems)
   - [Links](#links)
 - [Resources](#resources)
   - [API](#api)
   - [Dependencies](#dependencies)
-  - [Web-technologies](#web-technologies)
   - [References](#references)
 - [Future-plans](#future-plans)
 
@@ -34,24 +36,30 @@
 
 ## Overview
 
-Wetter (German for weather) is a Minimalist React web app.
+Aconews is a minimalist news feed app created with React and Node/express.
 
 ### About
 
-I created this web app to showcase data fetching ability and land a job as a React/Web developer. This is my second fully-fledged working web app using API with all the data required for a weather app.
+I have used Vite for instant React project creation, TailwindCSS for styling, React-router for basic single-page routing, and Node.js with Express.js for creating backend service for managing gnews APIs. I have used Acowale's official site for getting typography, colors, fonts, and styling references. I have chosen a mobile-first approach for responsive layouts which is also compatible with all screens thanks to tailwind responsive design classes. First I have created responsive layouts with dummy data and implemented routes and skeleton loading for loading behavior.
+
+I have created a home page that shows trending articles, category filters, and a news feed, created a search component for getting debounced results of news articles, and created filters for choosing country and language/region-specific news, Users can choose news categories for getting related news.
+
+For the implementation of the backend services, I have to use Vercel for hosting, Express.js framework as a dependency. Created different router files for creating two endpoints i.e. fetchTrendingNews and fetchSearchNews. For implementing these endpoints I have used promises, try-catch, async-await block, and used Axios to fetch data from gnews API.
 
 ### Features
 
-- Current, hourly, and daily forecasts,
-- Image according to weather type,
-- Theme toggle,
-- Visualization of data using charts,
-- Air quality index,
-- Some animations.
+- Trending and news feed section,
+- Filter news by Language, category and country,
+- Search component for getting latest news feed by keywords,
+- Pagination based on categories(API doesn't).
+
+### Problems
+
+Two minor issues I have faced are with Firebase because free plans don't support Firebase functions and app hosting also API doesn't support pagination for free tier.
 
 ### Links
 
-- Netlify URL: [https://wetterforecast.netlify.app]
+- Vercel URL: [https://mrrobotaconews.vercel.app/]
 
 ---
 
@@ -59,30 +67,15 @@ I created this web app to showcase data fetching ability and land a job as a Rea
 
 ### API
 
-- `open-meteo`: For getting current, daily(16 days) and hourly(48 hours) forecast,
-- `IQAir`: For getting AQI,
-- `Unsplash`: For fetching Images according to weather type,
-- `Geolocation API`: For location data,
+- `gnews.io`: For getting short list of news feeds and simple description data,
 
 ### Dependencies
 
-- TailwindCSS `v3.3.3`
-- recharts `v2.8.0`
-- extract-colors `v4.0.2`
-- react-spinners `v0.13.8`
-- framer-motion `v10.16.14`
-
-### Web-technologies
-
-- React `v18.2.0`
-- TailwindCSS `v3.3.3`
-- ES6
-- Vite `v4.4.9`
-- Visual Studio Code
-- Git `v2.42.0.windows.2`
-- Github
-- Netlify
-- Node `v20.11.0`
+- TailwindCSS `v3.4.10`,
+- React-router `v6.26.1`,
+- React-loading-skeleton `v3.4.0`,
+- Axios `v1.7.7`,
+- express `v4.19.2`,
 
 ### References
 
@@ -96,9 +89,8 @@ I created this web app to showcase data fetching ability and land a job as a Rea
 
 ## Future-plans
 
-- Saving data from multiple locations,
-- Location search,
-- Unit conversion,
-- Switching weather data (not available for free),
-- More AQI data (not available for free),
-- Weather radar (not available for free).
+- Animations using framer motion
+- More api's for getting more kinds of data
+- Redux for storing data within the project
+- TanStack Query replacing axios
+- GraphQL for fetching and managing API related queries
