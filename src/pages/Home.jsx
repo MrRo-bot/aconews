@@ -66,25 +66,22 @@ const Home = () => {
   }, [urlData]);
 
   useEffect(() => {
-    const timeOut = setTimeout(
-      (async () => {
-        try {
-          const articles = await axios.get(
-            `${urlData.url}${urlData.endPoint}?category=${urlData.category}&country=${urlData.country}&lang=${urlData.language}&max=${urlData.max}`
-          );
+    const timeOut = setTimeout(async () => {
+      try {
+        const articles = await axios.get(
+          `${urlData.url}${urlData.endPoint}?category=${urlData.category}&country=${urlData.country}&lang=${urlData.language}&max=${urlData.max}`
+        );
 
-          if (articles.status === 200) {
-            setData((prev) => ({
-              ...prev,
-              allArticles: articles.data,
-            }));
-          }
-        } catch (error) {
-          console.log(error.name, error.message);
+        if (articles.status === 200) {
+          setData((prev) => ({
+            ...prev,
+            allArticles: articles.data,
+          }));
         }
-      })(),
-      2000
-    );
+      } catch (error) {
+        console.log(error.name, error.message);
+      }
+    }, 2000);
     return () => clearTimeout(timeOut);
   }, [urlData]);
 
