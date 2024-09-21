@@ -13,7 +13,7 @@ const CategoryCard = ({ data, setUrlData }) => (
     onClick={() =>
       setUrlData((prev) => ({
         ...prev,
-        category: data?.name,
+        category: data?.name.toLowerCase(),
       }))
     }
     key={data?.name}
